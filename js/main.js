@@ -194,7 +194,7 @@ window.onload = () => {
     const sortSelect = document.getElementById('sort-select')
     const heroOrder = document.getElementById('order-select')
     const heroPerPage = document.getElementById('per-page')
-    const paginationInput = document.getElementById('pagination-input')
+    const paginationInput = document.querySelector('.pagination-input')
     const prevButton = document.querySelector('.prevButton')
     const nextButton = document.querySelector('.nextButton')
 

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/9c5ef97b8d.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <header class="header">
+                <h1 class="header-title">Github Users</h1>
+                <div class="btn-block">
+                    <div class="btn-item">
+                        <button class="btn active">Search</button>
+                    </div>
+                    <div class="btn-item">
+                        <a href="./favorites.html">
+                            <button class="btn">Favorites</button>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <div class="container">
+
+                <form autocomplete="off" class="form">
+                    <h1 class="search-title">Seacrh for Github users</h1>
+                    <div class="search-flex">
+                        <input class="search" type="text" id="search" placeholder="username">
+                        <p class="error-item"></p>
+                        <label for="select">
+                            sort
+                            <select class="select" name="select" id="sort-select">
+                                <option value="repositories">repositories</option>
+                                <option value="followers">followers</option>
+                                <option value="joined">joined</option>
+                            </select>
+                        </label>
+                        <label for="select">
+                            order
+                            <select class="select" name="select" id="order-select">
+                                <option value="desc">desc</option>
+                                <option value="asc">asc</option>
+                            </select>
+                        </label>
+                        <label for="per-page">
+                            per-page
+                            <input class="select" type="text" name="per-page" id="per-page" placeholder="1">
+                        </label>
+
+                    </div>
+                </form>
+
+                <div class="result">
+                    <div class="loader-block">
+                        <img class="img-spinner" src="/img/loader.gif" alt="img-loader">
+                    </div>
+
+                    <h1 class="result-title">Results</h1>
+                    <div class="result-list">
+
+                    </div>
+                </div>
+
+
+
+
+                <div class="pagination">
+                    <div class="pagination-inner">
+                        <button class="prevButton"><i class="fa-solid fa-arrow-left">prev</i></button>
+                        <input type="text" name="paginationInput" class="pagination-input">
+                        <button class="nextButton">next<i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="modal" id="modal">
+                    <div class="modal-content">
+                        <button class="close-btn">X</button>
+                        <h1 class="modal-title">
+                            Repositories
+                        </h1>
+                        <div class="modal-content-inner">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
